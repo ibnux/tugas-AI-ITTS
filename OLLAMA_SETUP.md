@@ -32,7 +32,7 @@ ollama pull neural-chat    # Lebih kecil dan cepat
 ollama pull llama2         # Lebih besar, lebih akurat
 ```
 
-⏳ Tunggu sampai selesai (bisa 5-15 menit tergantung kecepatan internet)
+Tunggu sampai selesai (bisa 5-15 menit tergantung kecepatan internet)
 
 ### 3Jalankan Ollama Server
 
@@ -108,7 +108,7 @@ Berdasarkan dokumen akademik ITTS, prosedur wisuda melibatkan beberapa tahap:
 
 4. Terakhir, pengambilan ijazah dan transkrip nilai di bagian akademik.
 
-📚 Sumber: Buku_Pedoman_Akademik_2025_2026.pdf
+Sumber: Buku_Pedoman_Akademik_2025_2026.pdf
 ```
 
 ---

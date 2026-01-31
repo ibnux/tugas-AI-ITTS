@@ -10,6 +10,7 @@ Waktu Ujian	:	19.00 – 20.00 WIB.
 ## TIM
 
 - Ibnu Maksum 1002230031
+- Rahmat Sidik 1002220035
 
 ## Penjelasan Aplikasi
 

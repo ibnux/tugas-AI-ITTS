@@ -11,6 +11,9 @@ Waktu Ujian	:	19.00 – 20.00 WIB.
 
 - Ibnu Maksum 1002230031
 - Rahmat Sidik 1002220035
+- Ahmad Dedy Khoirunnas 1002220019
+- Febriandio Prasetyo 1002220033
+- Muhammad Khoiri 1003220030
 
 ## Penjelasan Aplikasi
 

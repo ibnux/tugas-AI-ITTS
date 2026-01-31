@@ -28,7 +28,7 @@ OLLAMA_MODEL = "llama3.2:1b"                 # Model yang ringan dan cepat untuk
 @st.cache_resource
 def load_query_engine():
     """
-    🔧 Fungsi untuk memuat query engine dengan Ollama LLM
+    Fungsi untuk memuat query engine dengan Ollama LLM
     
     Tahapan:
     1. Set embedding model (HuggingFace) untuk konversi text ke vector
@@ -46,7 +46,7 @@ def load_query_engine():
     )
     Settings.embed_model = embed_model
     
-    # 🤖 Set Ollama LLM untuk generate jawaban
+    # Set Ollama LLM untuk generate jawaban
     try:
         llm = Ollama(
             model=OLLAMA_MODEL,                      # Model: llama3.2:1b
@@ -57,11 +57,11 @@ def load_query_engine():
         )
         Settings.llm = llm
         
-        # 📚 Load vector index dari storage
+        # Load vector index dari storage
         storage_context = StorageContext.from_defaults(persist_dir=PERSIST_DIR)
         index = load_index_from_storage(storage_context)
         
-        # 🔍 Buat query engine dengan optimasi untuk MacBook M2
+        # Buat query engine dengan optimasi untuk MacBook M2
         # similarity_top_k=2: ambil 2 dokumen paling relevan (tidak 3, untuk kurangi beban)
         # response_mode="compact": jawaban lebih ringkas dan cepat
         return index.as_query_engine(similarity_top_k=2, response_mode="compact"), True
@@ -86,13 +86,13 @@ def main():
     
     # Konfigurasi halaman Streamlit
     st.set_page_config(
-        page_title="PDF Chat dengan Ollama",
+        page_title="Pedoman Akademik ITTS - Chat PDF dengan Ollama",
         layout="wide"
     )
     
     # Header dan title aplikasi
-    st.title("Asisten Chat PDF (Ollama Local LLM)")
-    st.markdown("Chat dengan Ollama untuk menjawab pertanyaan tentang isi PDF Anda!")
+    st.title("Asisten Chat Pedoman Akademik ITTS")
+    st.markdown("Chat dengan Ollama untuk menjawab pertanyaan tentang isi Pedoman Akademik ITTS!")
     
     # Initialize chat history di session state
     # Session state memastikan chat history tetap ada saat Streamlit rerun
@@ -204,6 +204,9 @@ def main():
         # Tampilkan informasi tentang teknologi
         st.subheader("Tentang Aplikasi")
         st.write("""
+        **Tim:**
+        - **Ibnu Maksum** - 1002230031
+                 
         **Stack Teknologi:**
         - **LlamaIndex** - RAG Framework untuk semantic search
         - **Ollama** - Local LLM (tidak perlu API key)

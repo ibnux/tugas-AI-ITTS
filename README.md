@@ -4,8 +4,6 @@ Kode Mata Kuliah	:	SI148.
 Semester	:	3.   
 SKS	:	3.   
 Dosen Pengampu	:	Dhika Rizki Anbiya, S.Kom, M.T.    
-Tanggal Ujian	:	28 Januari 2026.    
-Waktu Ujian	:	19.00 – 20.00 WIB.   
 
 ## TIM
 
@@ -61,7 +59,7 @@ Ketik pertanyaan apapun tentang PDF:
 ## File Results
 
 - **build_index.py**: Working
-  - Membaca 5 PDF dari `./data/`
+  - Membaca PDF dari `./data/`
   - Mengekstrak 511,110 karakter
   - Membuat vector index dengan HuggingFace embeddings
   - Simpan ke `./storage/`

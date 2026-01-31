@@ -100,27 +100,6 @@ RuntimeError: operator torchvision::nms does not exist
 pip uninstall -y torchvision
 ```
 
-## Test Retrieval
-
-```bash
-python -c "
-from llama_index.core import StorageContext, load_index_from_storage, Settings
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from llama_index.core.retrievers import VectorIndexRetriever
-
-embed_model = HuggingFaceEmbedding(model_name='BAAI/bge-small-en-v1.5')
-Settings.embed_model = embed_model
-
-storage_context = StorageContext.from_defaults(persist_dir='./storage')
-index = load_index_from_storage(storage_context)
-retriever = VectorIndexRetriever(index=index, similarity_top_k=3)
-
-nodes = retriever.retrieve('Apa itu pedoman akademik')
-for node in nodes:
-    print(f'Score: {node.score:.3f} - {node.node.metadata.get(\"file_name\")}')
-"
-```
-
 ## Selesai!
 
 Semuanya sudah siap. Tinggal jalankan:
@@ -128,10 +107,15 @@ Semuanya sudah siap. Tinggal jalankan:
 python build_index.py && streamlit run app.py
 ```
 
+## Test Pertanyaan
+
+- Bagaimana prosedur wisuda di ITTS?
+- Bagaimana prosedur Skripsi di ITTS?
+- bagaimana cara mengisi KRS di portal mahasiswa?
+- bagaimana cara membuat Laporan kerja Praktik?
+- bagaimana cara menggunakan portal mahasiswa untuk melihat biaya kuliah?
+
+
 ## tangkapan layar setelah dijalankan
 
-<img width="3360" height="1876" alt="step1" src="https://github.com/user-attachments/assets/64fac5ee-623d-4ffd-81bf-17f9e037dc13" />
-<img width="3360" height="1876" alt="step2" src="https://github.com/user-attachments/assets/4b5a0859-1170-4a66-90d9-917913d9d928" />
-<img width="3360" height="1876" alt="step3" src="https://github.com/user-attachments/assets/2f56b2bc-abef-484d-928f-24cb62b033a0" />
-<img width="3404" height="1900" alt="step4" src="https://github.com/user-attachments/assets/97ba1f66-52ae-4908-b67b-d29a785328bb" />
 

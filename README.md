@@ -126,3 +126,11 @@ Semuanya sudah siap. Tinggal jalankan:
 ```bash
 python build_index.py && streamlit run app.py
 ```
+
+## tangkapan layar setelah dijalankan
+
+<img width="3360" height="1876" alt="step1" src="https://github.com/user-attachments/assets/64fac5ee-623d-4ffd-81bf-17f9e037dc13" />
+<img width="3360" height="1876" alt="step2" src="https://github.com/user-attachments/assets/4b5a0859-1170-4a66-90d9-917913d9d928" />
+<img width="3360" height="1876" alt="step3" src="https://github.com/user-attachments/assets/2f56b2bc-abef-484d-928f-24cb62b033a0" />
+<img width="3404" height="1900" alt="step4" src="https://github.com/user-attachments/assets/97ba1f66-52ae-4908-b67b-d29a785328bb" />
+

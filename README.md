@@ -116,6 +116,6 @@ python build_index.py && streamlit run app.py
 - bagaimana cara menggunakan portal mahasiswa untuk melihat biaya kuliah?
 
 
-## tangkapan layar setelah dijalankan
-
+## Video setelah streamlit dijalankan
+[![Watch the video](https://github.com/user-attachments/assets/a8c68407-102b-4fa9-be16-093416a78632)](https://youtu.be/p_kHVGtcuvA)
 

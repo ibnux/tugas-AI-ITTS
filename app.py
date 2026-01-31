@@ -204,8 +204,6 @@ def main():
         # Tampilkan informasi tentang teknologi
         st.subheader("Tentang Aplikasi")
         st.write("""
-        **Tim:**
-        - **Ibnu Maksum** - 1002230031
                  
         **Stack Teknologi:**
         - **LlamaIndex** - RAG Framework untuk semantic search
